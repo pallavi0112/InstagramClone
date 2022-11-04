@@ -1,0 +1,26 @@
+.reel {
+  width: 100vw;
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+.reel .video_reel {
+  position: relative;
+  background-color: #000;
+  scroll-snap-align: end;
+}
+
+.reel .video_reel video {
+  width:50%;
+  height:50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* .reel .video_reel .like_reel {
+  position: absolute;
+  bottom: 50px;
+  right: 150px;
+} */
+/*# sourceMappingURL=reels.css.map */

@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 500px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f2f2f2 !important;
+}
+#navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 25px;
+}
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 6vh;
+  background-color: #ffffff;
+  padding: 0px 20px;
+}
+
+#navbar .logoBx .logo {
+  width: 30px;
+}
+#navbar .logoBx .instagram {
+  width: 85px;
+}
+#navbar .button {
+  background-color: #ed0074;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 68px;
+}
+#navbar .search {
+  width: 16vw;
+  background: #ffffff;
+  border: 3px solid #ed0074;
+  box-shadow:0px -4px 2px rgba(0, 0, 0, 0.07),
+             0px 4px 3px rgba(0, 0, 0, 0.18);
+  border-radius:60px;
+  padding-left:15px;
+}
+#navbar .search form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#navbar .search i{
+  color:#999999;
+  font-size:20px;
+}
+#navbar .search input{
+  width: 90%;
+  height: 100%;
+  padding: 8px 15px;
+  background-color: transparent;
+  border-radius:60px;
+  color:#999999;
+  outline:none;
+  border:none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+#navbar .search input::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-weight:550;
+  font-family: "Roboto";
+}
+#navbar .search input:-ms-input-placeholder {
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+#navbar .search input::-ms-input-placeholder {
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+#navbar .search input::placeholder {
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+#add{
+  width: 16vw;
+  height: max-content;
+  background: #ed0074;
+  box-shadow:0px -4px 2px rgba(0, 0, 0, 0.07),
+             0px 4px 3px rgba(0, 0, 0, 0.18);
+  border-radius:60px;
+  text-align: center;
+}
+#add .plus{ 
+  background-color :white;
+  color :#ed0074 ;
+  font-size:18px;
+  padding:3px 5px;
+  border-radius:3px;
+  margin: auto 3px;
+}
+#reel img {
+  width: 1.8vw;
+}
+#profile img {
+  max-width: 70px;
+  min-width: 55px;
+  min-height: 55px;
+  max-height: 70px;
+  border-radius: 50%;
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+main .post_story {
+  width: 80%;
+  margin: 10px auto;
+}
+main .post_story .stories {
+  width: 100%;
+  height: 15vh;
+  background-color: #ffffff;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 5px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .post_story .stories::-webkit-scrollbar {
+  display: none;
+}
+main .post_story .stories .storyBx {
+  margin: auto 10px;
+  text-align: center;
+}
+main .post_story .stories .story {
+  min-width: 70px;
+  max-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #ed0074;
+  padding: 2px;
+}
+
+main .post_story .stories .story img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: -1;
+  cursor: pointer;
+}
+main .post_story .stories .story #plusIcon {
+  width: 50%;
+  height: 50%;
+}
+main .post_story .stories .add_story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 70px;
+  max-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #ed0074;
+  padding: 2px;
+}
+main .post_story .stories span {
+  font-size: 13px;
+  text-align: center;
+  color: #ada2a2;
+  font-weight: 550;
+  margin-top: 3px;
+}
+main .post_story .posts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  margin: 20px auto;
+}
+
+main .post_story .posts #post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+}
+
+main .post_story .posts #post #post_header {
+  height: 10vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 3px;
+}
+main .post_story .posts #post #post_header > div {
+  display: flex;
+  align-items: center;
+}
+main .post_story .posts #post #post_header .post_details {
+  margin-left: 15px;
+}
+main .post_story .posts #post #post_header .more_icon {
+  width: 25px;
+  height: 25px;
+}
+main .post_story .posts #post #post_header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main .post_story .posts #post #post_header h5 {
+  font-size: 25px;
+  margin-bottom: 0;
+  line-height: 23px;
+}
+main .post_story .posts #post #post_header span {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+main .post_story .posts #post #post_header h4 {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+main .post_story .posts #post #user_post {
+  width: 80%;
+  height: 420px;
+  object-fit: fill;
+  margin: 0 auto;
+}
+
+main .post_story .posts #post .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  width: 80%;
+  padding: 15px 0;
+  margin: 0% auto;
+}
+main .post_story .posts #post .lower span {
+  font-weight: 600;
+  margin: 0 5px;
+}
+main .post_story .posts #post .lower .caption {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.main_story {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  border: 12px solid #e77070;
+  display: none;
+}
+
+.main_story img {
+  width: 100%;
+  height: 100%;
+}
+
+a.likeBtn{
+   text-decoration:none !important ;
+   color: #000
+}
+a.likeBtn i{
+  color: #000;
+  font-size:10px;
+}
+.likeBtn i.nol{
+  color: #000;
+  transition: all 0.3s ease-in;
+}
+.likeBtn i.liked{
+  color:#ed0074 ;
+  transition: all 0.3s ease-in;
+}

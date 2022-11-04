@@ -1,0 +1,40 @@
+.reel {
+  width: 85vw;
+  display:grid;
+  grid-template-columns: repeat(2 , minmax(250px , 1fr));
+  gap: 20px;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  margin:20px auto;
+}
+.reel-container{
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin:30px auto;
+}
+.reel-container a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed0074;
+  padding: 10px 50px;
+}
+.reel .video_reel {
+  width:100%;
+  padding:20px;
+}
+
+.reel .video_reel video {
+  width:100%;
+  max-height:450px;
+  -o-object-fit: contain;
+  object-fit: contain; 
+}
+
+.reel .video_reel .like_reel {
+ background-color:#ed0074;
+}
+
