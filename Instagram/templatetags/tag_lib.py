@@ -1,5 +1,5 @@
 from django import template
-from Instagram.models import *
+from Instagram.models import POST
 register = template.Library()
 
 @register.filter()
